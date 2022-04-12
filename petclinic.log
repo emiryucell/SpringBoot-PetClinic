@@ -48,3 +48,119 @@ Unconditional classes:
 
 
 
+2022-04-13 02:07:56.392  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 17.0.2 on DESKTOP-S1HSU76 with PID 22248 (C:\Users\etalh\Documents\SpringBootTraining\petclinic\target\classes started by etalh in C:\Users\etalh\Documents\SpringBootTraining\petclinic)
+2022-04-13 02:07:56.392  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2022-04-13 02:07:56.528  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-13 02:07:56.528  INFO 22248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 02:07:56.529  INFO 22248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-13 02:07:56.536  INFO 22248 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-13 02:07:56.537  INFO 22248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2022-04-13 02:07:56.574 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-13 02:07:56.576 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2022-04-13 02:07:56.580 DEBUG 22248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-13 02:07:56.582 DEBUG 22248 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-13 02:07:56.623  INFO 22248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-13 02:07:56.625  INFO 22248 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 02:07:56.634  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 02:07:56.640  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.275 seconds (JVM running for 4529.983)
+2022-04-13 02:07:56.643  INFO 22248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name petclinic.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ShutdownEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
+
+   ShutdownEndpointAutoConfiguration#shutdownEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.ShutdownEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-04-13 02:08:07.200  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 17.0.2 on DESKTOP-S1HSU76 with PID 22248 (C:\Users\etalh\Documents\SpringBootTraining\petclinic\target\classes started by etalh in C:\Users\etalh\Documents\SpringBootTraining\petclinic)
+2022-04-13 02:08:07.200  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2022-04-13 02:08:07.324  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-13 02:08:07.325  INFO 22248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 02:08:07.325  INFO 22248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-13 02:08:07.332  INFO 22248 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-13 02:08:07.332  INFO 22248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 131 ms
+2022-04-13 02:08:07.357 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-13 02:08:07.359 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2022-04-13 02:08:07.362 DEBUG 22248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-13 02:08:07.364 DEBUG 22248 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-13 02:08:07.392  INFO 22248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-13 02:08:07.393  INFO 22248 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 02:08:07.399  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 02:08:07.405  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.219 seconds (JVM running for 4540.747)
+2022-04-13 02:08:07.407  INFO 22248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-13 02:08:08.870  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 17.0.2 on DESKTOP-S1HSU76 with PID 22248 (C:\Users\etalh\Documents\SpringBootTraining\petclinic\target\classes started by etalh in C:\Users\etalh\Documents\SpringBootTraining\petclinic)
+2022-04-13 02:08:08.870  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2022-04-13 02:08:08.994  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-13 02:08:08.994  INFO 22248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 02:08:08.994  INFO 22248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-13 02:08:09.000  INFO 22248 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-13 02:08:09.000  INFO 22248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2022-04-13 02:08:09.022 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-13 02:08:09.024 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2022-04-13 02:08:09.027 DEBUG 22248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-13 02:08:09.028 DEBUG 22248 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-13 02:08:09.055  INFO 22248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-13 02:08:09.056  INFO 22248 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 02:08:09.062  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 02:08:09.067  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.209 seconds (JVM running for 4542.409)
+2022-04-13 02:08:09.069  INFO 22248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-13 02:08:27.662  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Starting PetClinicApplication using Java 17.0.2 on DESKTOP-S1HSU76 with PID 22248 (C:\Users\etalh\Documents\SpringBootTraining\petclinic\target\classes started by etalh in C:\Users\etalh\Documents\SpringBootTraining\petclinic)
+2022-04-13 02:08:27.662  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : The following 1 profile is active: "dev"
+2022-04-13 02:08:27.773  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-13 02:08:27.773  INFO 22248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 02:08:27.773  INFO 22248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-13 02:08:27.779  INFO 22248 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-13 02:08:27.779  INFO 22248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2022-04-13 02:08:27.801 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-13 02:08:27.804 DEBUG 22248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2022-04-13 02:08:27.806 DEBUG 22248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-13 02:08:27.808 DEBUG 22248 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-13 02:08:27.835  INFO 22248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-13 02:08:27.836  INFO 22248 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 02:08:27.843  INFO 22248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 02:08:27.847  INFO 22248 --- [restartedMain] c.e.petclinic.PetClinicApplication       : Started PetClinicApplication in 0.196 seconds (JVM running for 4561.189)
+2022-04-13 02:08:27.848  INFO 22248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
